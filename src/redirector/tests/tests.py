@@ -4,8 +4,8 @@ from time import sleep
 
 import requests
 
-from src import redirector
-from src.redirector import Redirector
+import redirector
+from redirector import Redirector
 
 logger = getLogger('redirector.tests')
 
@@ -17,6 +17,7 @@ class TestRedirector(unittest.TestCase):
     PORT = '8080'
 
     # Redirect tests
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.correct_url = self._get_redirects_url(0)
