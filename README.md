@@ -23,6 +23,8 @@
 
 `./run_tests.sh`
 
+Actually, tested with Python3.8 only, as I used several 3.8 features just to try.
+
 Starts `bottle` server in the background, runs tests against it, then kills server.
 
 It was possible to monkeypatch requests.get used inside redirector by specific `pytest` functionality
